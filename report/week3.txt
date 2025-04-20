@@ -1,0 +1,30 @@
+Week 3
+
+The whole basically boils down to more stuff for frontend & slightly polishing it
+
+- now its finally possible add task from the site itself 
+(previously had to manually add tasks to the database using queries)
+
+When clicking on "Today's Tasks", a pop up enters in with cool animations for making a new task
+
+This pop up has: Title, Deadline, Description, Task Priority, Phase/Status & Project Link
+Task Priority decides the priority of the task, if the task is on critical, 
+notification of them will be recieved every 6hrs 
+& for high, medium & low, it will be 12hrs, 24hrs & 48hrs (might change in the future)
+Project Link will be implemented later.
+
+When clicked "done", if the deadline is todays, the task appears in the "Today's Task"
+Otherwise, the task for now can viewed in the "Calendar"
+
+- For now, Calendar shows all the task available in the month, sorting them deadline wise.
+In the next week, we plan to implement them to show month & allow to change the month.
+
+- Empty pages were added to all the categories present in navbar.
+
+Other misc stuff include
+- Making the logo unselectable
+- throwing error, if the email already exists
+- redirect to homepage, if the user had already logged in previously
+- fix security perms for cookies
+- make a pop up for notes (unimplemented)
+- padding & margin changes to navbar

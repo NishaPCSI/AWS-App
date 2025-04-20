@@ -1,0 +1,25 @@
+this week was given to more rigid backend and frontend with new features
+
+1. project links are implemented
+2. sepearte primary buttons are added for adding tasks,projects and notes
+3. notes are implemented
+4. task Edit and Delete are implemented right in the from
+5. task page now shows all the "remaining" tasks categorised by priority with animations
+6. Small Indicators for priority in tasks are added to the task container
+7. Account Button is now available at the top navbar 
+8. Account management API routes are available with Avatar uploading and changing userdata
+10. static file serving service is ready for user profile photos
+---
+11. JWT implementation has been altered to middleware instead of checking it on every route
+12. Calendar UI has been improved by a large margin with interactive stuff 
+    like Calendar ITSELF and button to navigate through the timeline
+13. The data in calendar and other views update in real time without needing to refresh pages
+14. Cookies are now Session only, which is more secure
+15. Dates are now moved from string ISO timestamps to epoch timestamps
+
+-- 
+16. projects now have a owner, only the owner of the project can make changes to it
+17. fixed a bug with empty strings and null values overriding data in database
+18. add more animations to cards and acknowledgement texts
+19. minor UI changes by moving from material icons to material symbols
+

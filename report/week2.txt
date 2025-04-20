@@ -1,0 +1,36 @@
+WEEK 1
+
+This week was given mostly to frontend and 1 person made the prototype (designing) and another implemented in the actual app (implementation)
+
+=> BACKEND
+
+- added an upload route so users can upload their account profile pictures
+- added chunks upload so the server DOES NOT crash on troll uploads like 50GB file
+- added Date of Birth in user schema and date time validation for database integrity
+- some security implementations with jwt, cookies and browser CORS.
+- change data request methods based on side effects, get for no side-effects and post for side-effects
+- minor bug fixes and security hardening
+
+=> FRONTEND
+
+(designing)
+
+Made Register page, requires user to give
+- fullname
+- email
+- dob
+- password
+
+And the general layout for the home page
+This includes
+- Buttons to add new tasks and project
+- A showcase of all of the tasks required to be done today
+- A showcase of notes written by the user, which he may delete upon completion
+- a navbar, which contains all the important links for the site
+- a side bar which contains all the pages required to work with task planner ( remaning implementation )
+
+(implementation)
+- made several small components like background layer and themed button for overall consistency in UI.
+- implemented the login AND registration page with WORKING login, connected to database
+- implemented home page for user, WORKING and connected to database, the user can manipulate tasks through the cards.
+- minor ui changes such as padding, color schemes and layouts

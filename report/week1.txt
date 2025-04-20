@@ -1,0 +1,36 @@
+WEEK 1
+
+=> BACKEND
+
+- discussed and reiterated the database schema for setting up this project
+- set up an ORM for database connection in python
+- checkout basic fields and joins and keys for data integrity
+- made a basic schema for REST API request and response
+- made a basic path for REST API requests for app to connection
+
+the DB schema is as follows:
+
+there are 3 tables:
+User, Task, project
+
+A User can have tasks, projects, name, email, password
+A User can have mutiple Tasks and Multiple projects
+A Task may or may NOT be assigned to a project
+A Task may ONLY contain data from the VALID enum fields for Progress
+A Project may ONLY contain data from VALID enum fields for phase
+
+
+=> FRONTEND
+
+- Chose a Primary Color (Teal)
+- Created Logos for the Site, 
+This includes:
+> Icon
+> Abbreviated Logo
+> A full Logo
+
+- Chose a simple design for the home page, more implmentation will be done next week
+- Added animation for the background shape, will be made random after more iterations
+- Created Login Layout
+- Added temporary check/test for Login
+

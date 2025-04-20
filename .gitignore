@@ -1,0 +1,14 @@
+# ignore all local databases and testing files
+*.db
+*.sqlite
+*.rest
+
+# ignore python cache venv
+__pycache__/
+venv/
+
+# ignore IDE specific settings
+.vscode/
+
+# ignore everything starting with test
+test*
