@@ -6,7 +6,7 @@ import { chunk_task_data_by_priority } from "../../../store/utils"
 import {TaskStatus, type Task } from "../../../types/Task"
 import type { PageLoad } from "./$types"
 
-export const filter_task_data = (_mid:{[key: string]: Task[]}) => {
+export const _filter_task_data = (_mid:{[key: string]: Task[]}) => {
     let _fin:{[key: string]: Task[]} = {};
 
     Object.entries(_mid).forEach(([x,y],_) => {
@@ -30,7 +30,7 @@ export const load:PageLoad = async ({ fetch }) => {
         throw error(500, 'Couldnt Fetch User Projects')
     }
     return{
-        task_data: filter_task_data(chunk_task_data_by_priority(await task_data.json())),
+        task_data: _filter_task_data(chunk_task_data_by_priority(await task_data.json())),
         project_data : project_list_by_id(await project_data.json())
     }
 

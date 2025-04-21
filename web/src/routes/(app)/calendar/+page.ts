@@ -5,7 +5,7 @@ import type { Project } from "../../../types/Project";
 import { chunk_task_data_by_deadline } from "../../../store/utils";
 import type { PageLoad } from "./$types";
 
-export const getMonthCalendar = async (y:number,m:number,fetch:any = window.fetch) => {
+export const _getMonthCalendar = async (y:number,m:number,fetch:any = window.fetch) => {
     var firstDay = new Date(y, m, 1);
     var lastDay = new Date(y, m + 1,1);
 
@@ -17,7 +17,7 @@ export const getMonthCalendar = async (y:number,m:number,fetch:any = window.fetc
 
 export const load:PageLoad = async ({ fetch }) => {
     let _date = new Date()
-    let task_data = await getMonthCalendar(_date.getFullYear(), _date.getMonth(),fetch)
+    let task_data = await _getMonthCalendar(_date.getFullYear(), _date.getMonth(),fetch)
 
     if (!task_data.ok){
         throw error(500, 'Couldnt Fetch Calendar Data')
